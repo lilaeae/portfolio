@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Designer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="stylesheet" href="css/portfolio.css">
+</head>
+
+<body>
+
+    <div id="loader">
+        <div>
+            <span id="loaderText"></span><span class="cursor-blink">|</span>
+        </div>
+    </div>
+
+    <div class="cursor-square">
+        <div class="cursor-square-inner"></div>
+    </div>
+
+    <div class="float-card" id="floatCard">
+        <img class="float-card-img" id="floatCardImg" alt="" />
+        <video class="float-card-video" id="floatCardVideo" muted playsinline preload="metadata"></video>
+        <span class="float-card-label" id="floatCardLabel"></span>
+    </div>
+
+    <nav>
+        <div class="nav-links">
+            <a href="#works">work</a>
+            <a href="#about">about</a>
+            <a href="#contact">contact</a>
+            <a href="assets/CV.pdf" class="download-cv" download="Lila_CV.pdf">download cv</a>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle Dark Mode">
+                <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.5" fill="none">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M12 2a10 10 0 0 0 0 20Z" fill="currentColor"></path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <header id="top">
+        <div class="hero-visuals">
+            <div class="hero-card" data-rx="-12" data-ry="0"></div>
+            <div class="hero-card" data-rx="8" data-ry="0"></div>
+            <div class="hero-card" data-rx="-5" data-ry="0"></div>
+        </div>
+        <div class="index-label">Portfolio '26</div>
+        <div class="hero-title-container">
+            <h1 class="hero-title">
+                <span class="reveal-mask"><span class="reveal-text">CREATIVE</span></span>
+                <span class="reveal-mask"><span class="reveal-text"
+                        style="animation-delay: 0.1s;">DESIGNER</span></span>
+            </h1>
+        </div>
+        <div class="subtitle">Based in Ghent, BE</div>
+
+        <div class="hero-lower">
+            <ul id="services">
+                <li>/ Art direction</li>
+                <li>/ Web design (UX/UI)</li>
+                <li>/ Web development</li>
+                <li>/ Brand identity</li>
+            </ul>
+            <p>I craft subtle, editorial web experiences that prioritize clear typography and intentional whitespace.
+            </p>
+            <div class="hero-actions">
+                <a href="mailto:dalila.idigova04@gmail.com" class="action-link">available for collaboration ↘</a>
+                <a href="#works" class="action-link">see the works ↓</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="works" class="works">
+        <h2 class="section-title">/ Projects</h2>
+        <div class="works-list">
+            <a href="https://www.behance.net/gallery/241707793/OCare-Mental-Health-UXUI" class="project-item"
+                data-title="Ocare" data-img="assets/ocare.png" target="_blank" rel="noopener noreferrer">
+                <div class="project-left">
+                    <span class="project-num">01.</span>
+                    <span class="project-title">Ocare</span>
+                </div>
+                <div class="project-tags">
+                    <span class="tag" style="--tag-color: var(--coral);">UX</span>
+                    <span class="tag" style="--tag-color: var(--blue);">Design</span>
+                    <span class="tag" style="--tag-color: var(--tan);">Motion</span>
+                </div>
+            </a>
+            <a href="https://antwerp-unseen.vercel.app/" class="project-item" data-title="Antwerp unseen"
+                data-img="assets/antwerp-unseen.png" target="_blank" rel="noopener noreferrer">
+                <div class="project-left">
+                    <span class="project-num">02.</span>
+                    <span class="project-title">Antwerp unseen</span>
+                </div>
+                <div class="project-tags">
+                    <span class="tag" style="--tag-color: var(--coral);">UX</span>
+                    <span class="tag" style="--tag-color: var(--blue);">Design</span>
+                </div>
+            </a>
+            <a href="video-player.html?src=assets%2FantwerpUnseen_final.mp4&title=ANTWERP%20UNSEEN%20-%20THE%20INTRODUCTION"
+                class="project-item" data-title="Antwerp unseen - the introduction"
+                data-video="assets/antwerpUnseen_final.mp4" target="_blank" rel="noopener noreferrer">
+                <div class="project-left">
+                    <span class="project-num">03.</span>
+                    <span class="project-title">Antwerp unseen - the introduction</span>
+                </div>
+                <div class="project-tags">
+                    <span class="tag" style="--tag-color: var(--tan);">Motion</span>
+                </div>
+            </a>
+            <a href="https://www.behance.net/gallery/255185157/TYPE01-Conference-Webdesign" class="project-item"
+                data-title="TYPE01" data-img="assets/type01.png" target="_blank" rel="noopener noreferrer">
+                <div class="project-left">
+                    <span class="project-num">04.</span>
+                    <span class="project-title">TYPE01</span>
+                </div>
+                <div class="project-tags">
+                    <span class="tag" style="--tag-color: var(--purple);">UI</span>
+                    <span class="tag" style="--tag-color: var(--blue);">Design</span>
+                </div>
+            </a>
+            <a href="https://www.behance.net/gallery/255185559/Miles-Meals" class="project-item"
+                data-title="MILES & MEALS" data-img="assets/m%26m.png" target="_blank" rel="noopener noreferrer">
+                <div class="project-left">
+                    <span class="project-num">05.</span>
+                    <span class="project-title">MILES & MEALS</span>
+                </div>
+                <div class="project-tags">
+                    <span class="tag" style="--tag-color: var(--purple);">UI</span>
+                    <span class="tag" style="--tag-color: var(--blue);">Design</span>
+                </div>
+            </a>
+            <a href="video-player.html?src=assets%2F1257524245814889613.mov&title=IN%20MEMORY%20OF%20HER"
+                class="project-item" data-title="IN MEMORY OF HER" data-video="assets/1257524245814889613.mov"
+                target="_blank" rel="noopener noreferrer">
+                <div class="project-left">
+                    <span class="project-num">06.</span>
+                    <span class="project-title">IN MEMORY OF HER</span>
+                </div>
+                <div class="project-tags">
+                    <span class="tag" style="--tag-color: var(--tan);">Motion</span>
+                </div>
+            </a>
+            <a href="video-player.html?src=assets%2Fnew_main.mp4&title=COGO%20-%20APP%20ANIMATION" class="project-item"
+                data-title="COGO - APP ANIMATION" data-video="assets/new_main.mp4" target="_blank"
+                rel="noopener noreferrer">
+                <div class="project-left">
+                    <span class="project-num">07.</span>
+                    <span class="project-title">COGO - APP ANIMATION</span>
+                </div>
+                <div class="project-tags">
+                    <span class="tag" style="--tag-color: var(--tan);">Motion</span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2 class="section-title">/ About LILA</h2>
+        <div class="about-top">
+            I'm <strong>LILA [/daˈlila/]</strong>, a trainee digital designer with currently two years of experience, i
+            am mostly keen on
+            <span class="inline-img eye"><img src="assets/img-eye-antwerp.png" alt="Antwerp eye illustration"></span>
+            <strong>motion design</strong> ,
+            <span class="inline-img phones"><img src="assets/img-phones-ocare.png"
+                    alt="Ocare phones illustration"></span>
+            <strong>UX/UI design</strong> and <strong>visual design</strong>
+        </div>
+
+        <div class="about-bottom">
+            <div class="about-bottom-content">
+                Other than designing, I like to spend my time consuming all kinds of media, usually cinematography,
+                photography or any other kind of artistic -graphy. My favorite artists include <strong>SILICA
+                    GEL</strong>
+                <img class="silica-inline-img" src="assets/silica-gel-pack.png" alt="Silica gel pack illustration">
+                Elliot Smith && malice mizer
+            </div>
+            <a href="assets/CV.pdf" class="action-link download-cv" download="Lila_CV.pdf">Download CV ↘</a>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-top-email">[dalila.idigova04@gmail.com]</div>
+        <a href="mailto:dalila.idigova04@gmail.com" class="massive-text">LET'S TALK</a>
+        <div class="footer-bottom">
+            <div>© 2026 Lila</div>
+            <svg class="doodle" viewBox="0 0 100 100" stroke="currentColor" stroke-width="4" fill="none">
+                <path
+                    d="M50,45 C45,30 35,30 40,45 C25,40 25,50 40,55 C35,70 45,70 50,55 C55,70 65,70 60,55 C75,50 75,40 60,45 C65,30 55,30 50,45 Z"
+                    stroke-linejoin="round" />
+                <circle cx="50" cy="50" r="4" fill="currentColor" />
+                <path d="M50,60 Q45,85 60,95" stroke-linecap="round" />
+            </svg>
+            <div> <a class="bh-link" href="https://www.behance.net/lila-ae">Be</a> / In</div>
+        </div>
+    </footer>
+
+    <script src="js/portfolio.js" defer></script>
+</body>
+
+</html>
